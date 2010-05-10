@@ -12,7 +12,7 @@ module UR
     
     def initialize(sab_code)
       solr = RSolr.connect :url => SEARCH_SERVICE_URL
-      @sab = UR::Sab.new(sab_code)
+      @sab = UR::Sab.new(sab_code) unless sab_code.nil?
       
       response = solr.find({
         :indent => 'on',
