@@ -5,5 +5,10 @@ Naive translation of SAB codes
 ### Installation
     gem install ur-sab
     
-#### Get
-    code = UR::Sab.translate('C')
+#### Examples
+    require 'ur-sab'
+    
+    search = UR::SabSearch.new('C')
+    
+    search.sab.text #=> "Religion"
+    search.subjects.last.count #=> 2
