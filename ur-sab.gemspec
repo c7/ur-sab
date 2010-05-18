@@ -1,9 +1,10 @@
 Gem::Specification.new do |s|
   s.name          = "ur-sab"
-  s.version       = "0.1"
-  s.date          = "2010-05-10"
+  s.version       = "0.2"
+  s.date          = "2010-05-18"
   s.summary       = "Naive translation of SAB codes"
-  s.description   = "Translates SAB codes to Swedish subject"
+  s.description   = "Naive translation of SAB codes to Swedish subject for " +
+                    "use with Utbildningsradion products"
   s.has_rdoc      = false
   s.email         = "peter@c7.se"
   s.homepage      = "http://github.com/c7/ur-sab"
