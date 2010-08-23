@@ -10,7 +10,7 @@ module UR
     
     attr_reader :solr, :sab, :subjects
     
-    def initialize(sab_code)
+    def initialize(sab_code, options = {})
       solr = RSolr.connect :url => SEARCH_SERVICE_URL
       @sab = UR::Sab.new(sab_code) unless sab_code.nil?
       
@@ -21,7 +21,7 @@ module UR
         'facet.limit' => -1,
         'facet.prefix' => sab_code,
         :q => '*:*',
-      })
+      }.merge(options))
       
       # Expose the Solr response
       @solr = response
