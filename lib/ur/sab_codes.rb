@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module UR
   SAB_CODES = {
     'A' => 'Bok- och biblioteksväsen',
@@ -23375,7 +23377,7 @@ module UR
     'Qm-r' => 'Oceanien (Australien, Nya Zeeland, Melanesien, Polynesien, Mikronesien)',
     'Qm-s' => 'Polarländerna',
     'Qz' => 'Särskilda företag',
-    'R' => 'Idrott, lek och spel', 
+    'R' => 'Idrott, lek och spel',
     'Ra' => 'Gymnastik',
     'Rag' => 'Motion',
     'Rah' => 'Bodybuilding',
